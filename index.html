@@ -1,0 +1,137 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: skyblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .details {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        input, select {
+            margin: 8px;
+            padding: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Travel Explorer</h1>
+    <p>Explore the World</p>
+</header>
+
+<nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<h2 id="destinations" align="center">Destinations</h2>
+
+<div class="grid">
+    <div class="card">
+        <h3>Goa</h3>
+        <p>Beautiful Beaches</p>
+        <p>Duration: 3 Days</p>
+        <p>Price: ₹5000</p>
+    </div>
+
+    <div class="card">
+        <h3>Agra</h3>
+        <p>Visit Taj Mahal</p>
+        <p>Duration: 2 Days</p>
+        <p>Price: ₹4000</p>
+    </div>
+
+    <div class="card">
+        <h3>Manali</h3>
+        <p>Mountains and Snow</p>
+        <p>Duration: 4 Days</p>
+        <p>Price: ₹8000</p>
+    </div>
+</div>
+
+<div class="details" id="booking">
+    <h2>Booking Details</h2>
+
+    <form>
+        Name: <input type="text" required><br>
+        Email: <input type="email" required><br>
+
+        Destination:
+        <select>
+            <option>Goa</option>
+            <option>Agra</option>
+            <option>Manali</option>
+        </select><br>
+
+        Travel Date: <input type="date"><br>
+        Travellers: <input type="number" min="1"><br>
+
+        <input type="submit" value="Book Now">
+    </form>
+</div>
+
+<div class="details" id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: travel@gmail.com</p>
+    <p>Phone: 9876543210</p>
+    <p>Address: Vijayawada, Andhra Pradesh</p>
+</div>
+
+<footer>
+    <p>Travel Explorer | 2026</p>
+</footer>
+
+</body>
+</html>
+```
